@@ -1,4 +1,4 @@
-#Practical -3
+## Practical -3
 AIM: Create an android application which demonstrates implicit & explicit Intent. 
 1. Make call to specific number
 
@@ -15,7 +15,7 @@ AIM: Create an android application which demonstrates implicit & explicit Intent
 7. Open Login Activity
 
    
-🚀 Features
+## 🚀 Features
 - 📞 **Make a Call** → Open dialer with a specific phone number (Implicit Intent)  
 - 🌐 **Open URL** → Launch browser with a specific website (Implicit Intent)  
 - 📖 **View Call Log** → Open the device’s call log (Implicit Intent)  
@@ -39,7 +39,6 @@ AIM: Create an android application which demonstrates implicit & explicit Intent
 ---
 
 ## 📂 Project Structure
-```
 app/
 ├── src/
 │   └── main/
@@ -62,8 +61,6 @@ app/
 - **Register Activity** → Explicit Intent navigation  
 
 (Add screenshots here after running the app.)
-
----
 
 ## 📝 Notes
 - Use a **real device** to test features like calling and camera.  
