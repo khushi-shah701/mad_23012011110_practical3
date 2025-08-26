@@ -39,6 +39,7 @@ AIM: Create an android application which demonstrates implicit & explicit Intent
 ---
 
 ## 📂 Project Structure
+```
 app/
 ├── src/
 │   └── main/
@@ -54,7 +55,7 @@ app/
 │           ├── drawable/             // Icons & assets
 │           └── AndroidManifest.xml   // Permissions, activity declarations
 └── README.md
-
+```
 ## 📸 Screenshots
 - **Main Activity** → Buttons for each Intent  
 - **Login Activity** → Explicit Intent navigation  
