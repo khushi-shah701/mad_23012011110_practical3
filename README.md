@@ -1,49 +1,71 @@
-# MAD Practical 3
+#Practical -3
+AIM: Create an android application which demonstrates implicit & explicit Intent. 
+1. Make call to specific number
 
-**AIM**: Create an Android Application which demonstrates **Implicit & Explicit Intents**.  
+2. Open specific URL
 
-📌 Project Overview
-This Android app demonstrates the use of **Intents** in Android – both **implicit** and **explicit**.  
-The application allows the user to perform different actions like making a call, opening the browser, checking call logs, accessing the gallery, setting an alarm, opening the camera, and navigating to another activity (Login Activity).  
+3. Open Call Log
 
-🎯 Features
-The app performs the following tasks using Intents:
-1. **Make a call** to a specific number  
-2. **Open a specific URL** in a browser  
-3. **Open Call Log** to view recent calls  
-4. **Open Gallery** to view images  
-5. **Set an Alarm**  
-6. **Open Camera** to capture photos  
-7. **Open Login Activity** (Explicit Intent)  
+4. Open Gallery
 
-📝 Study & Learning Outcomes
-- **Intent** and its types:  
-  - Implicit Intent  
-  - Explicit Intent  
-- **Types of Intent Actions** (e.g., `ACTION_VIEW`, `ACTION_DIAL`, `ACTION_MAIN`)  
-- Usage of:  
-  - `Intent.setData()`  
-  - `Intent.setType()`  
-  - `Uri.parse()`  
-- **UI Components**: Button, ConstraintLayout, CoordinatorLayout  
-- **Activity navigation** using `startActivity()` and `ActivityResultContracts`  
-- **Runtime permissions**:  
-  - `ContextCompat.checkSelfPermission()`  
-  - `ActivityCompat.requestPermissions()`  
-- **Android built-in Content Types**:  
-  - `ContactsContract.Contacts.CONTENT_TYPE`  
-  - `CallLog.Calls.CONTENT_TYPE`  
-  - `"image/*"`  
-  - `"tel:"`  
-- Adding **Drawable Resources** to an Android project  
-- Adding multiple **Activities** (e.g., Login Activity)  
+5. Set Alarm
 
-🛠️ Tech Stack
-- **Language**: Kotlin / Java  
-- **Framework**: Android SDK  
-- **IDE**: Android Studio  
+6. Open Camera
 
-🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/khushi-shah701/mad_23012011110_practical3.git
+7. Open Login Activity
+
+   
+🚀 Features
+- 📞 **Make a Call** → Open dialer with a specific phone number (Implicit Intent)  
+- 🌐 **Open URL** → Launch browser with a specific website (Implicit Intent)  
+- 📖 **View Call Log** → Open the device’s call log (Implicit Intent)  
+- 🖼️ **Open Gallery** → View images in the gallery (Implicit Intent)  
+- ⏰ **Set Alarm** → Open alarm setup (Implicit Intent)  
+- 📷 **Open Camera** → Launch the camera app (Implicit Intent)  
+- 🔑 **Login Activity** → Navigate to Login screen within app (Explicit Intent)  
+- 📝 **Register Activity** → Navigate to Registration screen within app (Explicit Intent)  
+
+---
+
+## 🧩 Core Concepts Covered
+- **Intents** → Difference between **implicit** and **explicit** intents  
+- **Intent Actions** → Using system-defined and custom actions  
+- **URI Handling** → Parsing URIs, using `Intent.setData()` & `Intent.setType()`  
+- **Permissions** → Handling runtime permissions for phone, camera, and storage  
+- **Activity Results** → Using `ActivityResultContracts` for modern result handling  
+- **Layouts** → UI designed using **ConstraintLayout** and **CoordinatorLayout**  
+- **Manifest Declarations** → Activities & intent filters setup  
+
+---
+
+## 📂 Project Structure
+```
+app/
+├── src/
+│   └── main/
+│       ├── java/com/example/intentsdemo/
+│       │   ├── MainActivity.kt       // Buttons & Implicit Intent logic
+│       │   ├── LoginActivity.kt      // Explicit Intent target
+│       │   └── RegisterActivity.kt   // Registration screen
+│       └── res/
+│           ├── layout/
+│           │   ├── activity_main.xml
+│           │   ├── activity_login.xml
+│           │   └── activity_register.xml
+│           ├── drawable/             // Icons & assets
+│           └── AndroidManifest.xml   // Permissions, activity declarations
+└── README.md
+
+## 📸 Screenshots
+- **Main Activity** → Buttons for each Intent  
+- **Login Activity** → Explicit Intent navigation  
+- **Register Activity** → Explicit Intent navigation  
+
+(Add screenshots here after running the app.)
+
+---
+
+## 📝 Notes
+- Use a **real device** to test features like calling and camera.  
+- Emulator may not fully support call log or gallery actions.  
+- Always handle runtime permissions for Android 6.0 (API 23) and above.  
